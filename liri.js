@@ -7,4 +7,15 @@ const keys = require('./keys.js');
 
 var userInput = process.argv[2];
 
-console.log("Hey there!");
+if (userInput = "my-tweets") {
+    request("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=" + consumer_key, function (error, response, body) {
+
+        // If the request was successful...
+        if (!error && response.statusCode === 200) {
+
+            // Then log the body from the site!
+            console.log(consumer_key);
+        }
+    });
+
+};
